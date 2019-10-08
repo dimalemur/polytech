@@ -15,6 +15,5 @@ fetch('/data', {
         else {
             renderEntireTree(state);
         }
-
     })
-    .catch(err => console.log(err));
+    .catch(err => console.log("Вот эта ошибка" + err));

@@ -13,6 +13,7 @@ def login():
         f.write(request.data)
         f.close()
         print(request.data)
+        return jsonify(request.get_json(force=True))
     else:
         with open("data.json", "r") as read_file:
             data = json.load(read_file)

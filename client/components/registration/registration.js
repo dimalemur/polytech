@@ -1,7 +1,6 @@
 import React from 'react'
 import './registration.css'
 import state, {addpost} from '../../redux/state'
-import axios from 'axios'
 import {renderEntireTree} from "../../render";
 
 
@@ -23,12 +22,15 @@ export default class Registration extends React.Component{
         if (this.state.text !== "" && this.state.title !== ""){
             addpost(this.state.title,this.state.text);
 
-            axios.post('/data', state )
+            fetch('/data', {
+                method: 'post',
+                body: JSON.stringify(state)
+            })
                 .then((res) => {
-                    console.log("RESPONSE RECEIVED: ", res);
+                    console.log("Ответ Получен: ", res);
                 })
-                .catch((err) => {
-                    console.log("AXIOS ERROR: ", err);
+                .catch((err) =>{
+                    console.log("Ошибка отправки: ", err)
                 });
 
         }
