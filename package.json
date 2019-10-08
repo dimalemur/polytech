@@ -36,6 +36,6 @@
     "style-loader": "^1.0.0",
     "url-loader": "^2.2.0",
     "webpack": "^1.15.0",
-    "webpack-dev-server": "^1.4.1"
+    "webpack-dev-server": "^3.1.11"
   }
 }
