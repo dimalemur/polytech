@@ -1,7 +1,20 @@
 import  React from 'react';
-import  ReactDom from 'react-dom';
+import {renderEntireTree} from "./render";
+import state from "./redux/state";
 
-ReactDom.render(
-    <h1>Готово</h1>,
-    document.getElementById('Page')
-);
+fetch('/data', {
+    method:'GET',
+    mode:'no-cors',
+    dataType:'json'
+})
+    .then(r => r.json())
+    .then(r => {
+        if ( r === "{}"){
+            renderEntireTree(r);
+        }
+        else {
+            renderEntireTree(state);
+        }
+
+    })
+    .catch(err => console.log(err));

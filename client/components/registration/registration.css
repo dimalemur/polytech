@@ -1,0 +1,27 @@
+.RegistrationWrap{
+    display: flex;
+    justify-content: center;
+}
+.Registration {
+    display: grid;
+    align-items: center;
+    width: 60%;
+
+}
+.Registration-Title {
+    display: inline-block;
+    height: 2em;
+}
+
+.Registration-Text {
+    display: inline-block;
+    margin-top: 0.5em;
+    height: 6em;
+    word-break: break-word;
+}
+
+.Registration-Button{
+    width: 50%;
+    margin: 0.5em auto 0;
+    height: 3em;
+}

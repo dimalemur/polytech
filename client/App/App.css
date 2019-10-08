@@ -1,0 +1,27 @@
+body {
+    margin: 0px;
+}
+#Page {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.AppWrapper {
+    display:grid;
+}
+
+.PostsWrap {
+    display: grid;
+}
+
+.Post {
+    max-width: 1024px;
+    margin-top: 1em;
+    border-radius: 10px;
+    text-align: center;
+    background: bisque;
+}
+
+.Post-Title{
+    font-weight: bold;
+}

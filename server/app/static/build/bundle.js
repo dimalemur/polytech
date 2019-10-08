@@ -33272,6 +33272,18 @@
 	                })['catch'](function (err) {
 	                    console.log("AXIOS ERROR: ", err);
 	                });
+
+	                // fetch('/data', {
+	                //     method:'GET',
+	                //     mode:'no-cors',
+	                //     dataType:'json'
+	                // })
+	                //     .then(r => r.json())
+	                //     .then(r => {
+	                //         console.log(r);
+	                //         renderEntireTree(r);
+	                //     })
+	                //     .catch(err => console.log(err));
 	            }
 
 	            (0, _render.renderEntireTree)(_reduxState2['default']);
@@ -33378,6 +33390,8 @@
 	    r.appPages.posts.forEach(function (now) {
 	        state.appPages.posts.push(now);
 	    });
+	    console.log(state);
+	    console.log("asdasdasd");
 	})['catch'](function (err) {
 	    return console.log(err);
 	});
