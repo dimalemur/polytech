@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/dimalemur/polytech#readme",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "body-parser": "latest",
     "express": "^4.17.1",
     "react": "^16.10.2",
